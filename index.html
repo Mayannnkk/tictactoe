@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic_Tac_Toe</title>
+    <link rel="stylesheet" href="TicTacToe.css">
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="board">
+        <div class="cell up left" id="1"><span class="box"></span></div>
+        <div class="cell up" id="2"><span class="box"></span></div>
+        <div class="cell up right" id="3"><span class="box"></span></div>
+        <div class="cell left" id="4"><span class="box"></span></div>
+        <div class="cell" id="5"><span class="box"></span></div>
+        <div class="cell right" id="6"><span class="box"></span></div>
+        <div class="cell down left" id="7"><span class="box"></span></div>
+        <div class="cell down" id="8"><span class="box"></span></div>
+        <div class="cell down right" id="9"><span class="box"></span></div>
+
+    </div>
+    <div class="info">
+        <p class="text1">X's Turn</p>
+        <button class="resetbtn" onclick="reset()">Reset</button>
+    </div>
+    <div id="overlay" onclick="off()">
+        <div class="c">
+            <div id="text">Overlay Text</div>
+            <button onclick="reset()">play again</button>
+        </div>
+    </div>
+    <script src="TicTacToe.js"></script>
+</body>
+
+</html>
